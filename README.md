@@ -297,10 +297,12 @@ Create an Laravel application key
 | Method | Uri | Description | Code |
 | --- | --- | -- | -- |
 | GET | /api/v1/developers?page=n&paginate=n | Retornará todos os desenvolvedores | 200 |
-| GET  | /api/v1/developers/{id} | Retornará todos os desenvolvedores | 200 / 404 |
+| GET  | /api/v1/developers/{id} | Retornará um desenvolvedor | 200 / 404 |
 | POST | /api/v1/developers | Adiciona um novo desenvolvedor | 201 / 400 |
 | DELETE | /api/v1/developers/{id} | Excluirá um desenvolvedor | 204 / 400 |
-| PUT | /api/v1/developers/{id} | Atualiza os dados de um desenvolvedor  |200 / 400 |
+| PUT | /api/v1/developers/{id} | Atualiza os dados de um desenvolvedor  | 200 / 400 |
+| GET | /api/v1/hobbies | Retornará todos os hobbies  | 200 |
+| GET | /api/v1/hobbies/{id} | Retornará um hobby  | 200 / 400 |
 
 <p align="center">4 folder structures to organize your React & React Native project <a href="https://reboot.studio/blog/folder-structures-to-organize-react-project">💾</a></p>
 
