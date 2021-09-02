@@ -237,6 +237,14 @@
     npm run dev
 ```
 
+```bash
+    npm	install	axios --save
+```
+
+```bash
+    npm install vue-router --save
+```
+
 <h6 align="center">Run with Docker</h6>
 
 After doing the project setup, follow the steps.
