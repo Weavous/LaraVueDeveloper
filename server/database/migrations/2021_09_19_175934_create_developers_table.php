@@ -4,6 +4,8 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
+use App\Models\Hobby;
+
 class CreateDevelopersTable extends Migration
 {
     /**
@@ -18,11 +20,8 @@ class CreateDevelopersTable extends Migration
 
             $table->string("name");
             $table->char("sex");
-            $table->unsignedBigInteger("hobby_id");
             $table->timestamp("birthdate");
-
-            $table->foreign("hobby_id")->references("id")->on("hobbies")->onDelete("CASCADE");
-
+            
             $table->timestamps();
         });
     }
