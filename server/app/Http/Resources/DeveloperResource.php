@@ -14,6 +14,15 @@ class DeveloperResource extends JsonResource
      */
     public function toArray($request)
     {
-        return parent::toArray($request);
+        return [
+            "id" => $this->id,
+            "name" => $this->name,
+            "sex" => $this->sex,
+            "birthdate" => $this->birthdate,
+            "created_at" => $this->created_at,
+            "updated_at" => $this->updated_at,
+            "hobbies" => $this->hobbies,
+            "tools" => $this->tools
+        ];
     }
 }
