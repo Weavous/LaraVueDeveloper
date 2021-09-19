@@ -8,7 +8,7 @@ use App\Models\Hobby;
 
 class HobbySeeder extends Seeder
 {
-    private $data = [
+    private array $data = [
         [
             "name" => "3D printing"
         ],
