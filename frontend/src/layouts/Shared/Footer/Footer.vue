@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import TradeMark from "../../components/DOM/TradeMark.vue";
+import TradeMark from "../TradeMark/TradeMark.vue";
 
 export default {
   name: "Footer",

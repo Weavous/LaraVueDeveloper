@@ -1,5 +1,5 @@
-import { http } from './http.js';
+import { http } from "./http.js";
 
 export default {
-    combinations: (token) => { return http.post(`/currencies/combinations`, { 'token': token }) }
+  index: () => { return http.get(`/developers`); }
 };

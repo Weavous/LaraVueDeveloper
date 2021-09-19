@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Navigation from "../Shared/Navigation.vue";
+import Navigation from "../Shared/Navigation/Navigation.vue";
 
 export default {
   name: "Main",
