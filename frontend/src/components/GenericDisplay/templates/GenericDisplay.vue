@@ -2,8 +2,8 @@
     <table class="min-w-max w-full table-auto">
         <thead>
             <tr class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
-                <th class="py-3 px-6 text-left">Project</th>
                 <th class="py-3 px-6 text-left">Developer</th>
+                <th class="py-3 px-6 text-center">Tools</th>
                 <th class="py-3 px-6 text-center">Hobby</th>
                 <th class="py-3 px-6 text-center">Status</th>
                 <th class="py-3 px-6 text-center">Actions</th>
@@ -11,30 +11,26 @@
         </thead>
         <tbody class="text-gray-600 text-sm font-light">
             <tr v-for="(developer, key) in developers" :key="key" class="border-b border-gray-200 hover:bg-gray-100">
-                <td class="py-3 px-6 text-left whitespace-nowrap">
-                    <div class="flex items-center">
-                        <div class="mr-2">
-                            <img class="w-6 h-6" :src="developer.url">
-                        </div>
-                        <span class="font-medium">{{ developer.title }}</span>
-                    </div>
-                </td>
                 <td class="py-3 px-6 text-left">
                     <div class="flex items-center">
                         <div class="mr-2">
-                            <RandomUser></RandomUser>
+                            <User></User>
                         </div>
                         <span>{{ developer.name }}</span>
                     </div>
                 </td>
                 <td class="py-3 px-6 text-center">
                     <div class="flex items-center justify-center">
-                        <RandomUser></RandomUser>
-                        <RandomUser></RandomUser>
-                        <RandomUser></RandomUser>
+                        <Tool v-for="(tool, key) in developer.tools" :key="key" :src="tool.url" :alt="tool.name"></Tool>
                     </div>
                 </td>
-
+                <td class="py-3 px-6 text-center">
+                    <div class="flex items-center justify-center">
+                        <User></User>
+                        <User></User>
+                        <User></User>
+                    </div>
+                </td>
                 <td class="py-3 px-6 text-center">
                     <span v-if="developer.status === `Completed`">
                         <Completed></Completed>
@@ -81,14 +77,16 @@ import Completed from "../components/Status/implementations/Completed.vue";
 import Pending from "../components/Status/implementations/Pending.vue";
 import Scheduled from "../components/Status/implementations/Scheduled.vue";
 
-import RandomUser from "../../RandomUser.vue";
+import User from "../../User.vue";
+import Tool from "../../Tool.vue";
+
 import React from "../../images/React.vue";
 
 import developers from "../../../services/developers.js";
 
 export default {
   name: "GenericDisplay",
-  components: { Active, Completed, Pending, Scheduled, RandomUser, React },
+  components: { Active, Completed, Pending, Scheduled, Tool, User, React },
   data() {
     return {
         developers: [ ]
