@@ -121,6 +121,8 @@
     php artisan make:controller DeveloperController --api
 
     php artisan make:controller HobbyController --api
+
+    php artisan make:controller ToolController --api
 ```
 
 <h6 align="center">Models</h6>
@@ -129,6 +131,14 @@
     php artisan make:model Developer
 
     php artisan make:model Hobby
+
+    php artisan make:model Tool
+
+    php artisan make:model Status
+
+    php artisan make:model DeveloperHobby
+
+    php artisan make:model DeveloperTool
 ```
 
 <h6 align="center">Migrations</h6>
@@ -137,12 +147,24 @@
     php artisan make:migration create_developers_table
 
     php artisan make:migration create_hobbies_table
+
+    php artisan make:migration create_tools_table
+
+    php artisan make:migration create_statuses_table
+
+    php artisan make:migration create_developer_tools_table
+
+    php artisan make:migration create_developer_hobbies_table
 ```
 
 <h6 align="center">Factories</h6>
 
 ```bash
     php artisan make:factory DeveloperFactory
+
+    php artisan make:factory DeveloperHobbyFactory
+
+    php artisan make:factory DeveloperToolFactory
 ```
 
 <h6 align="center">Seeders</h6>
@@ -153,6 +175,14 @@
     php artisan make:seeder DeveloperSeeder
 
     php artisan make:seeder HobbySeeder
+
+    php artisan make:seeder ToolSeeder
+
+    php artisan make:seeder StatusSeeder
+
+    php artisan make:seeder DeveloperHobbySeeder
+
+    php artisan make:seeder DeveloperToolSeeder
 ```
 
 <h6 align="center">JWT</h6>
