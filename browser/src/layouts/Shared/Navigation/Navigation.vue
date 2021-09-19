@@ -11,7 +11,7 @@
 
       <div class="mt-auto h-16 flex items-center w-full">
         <button class="h-16 w-10 mx-auto flex flex justify-center items-center w-full focus:text-orange-500 hover:bg-red-200 focus:outline-none">
-          <Logout></Logout>
+          <router-link to="login"><Logout></Logout></router-link>
         </button>
       </div>
     </aside>

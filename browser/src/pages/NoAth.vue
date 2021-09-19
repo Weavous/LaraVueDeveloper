@@ -1,6 +1,6 @@
 <template>
   <Main>
-    <div>About</div>
+    <div>NoAuth</div>
   </Main>
 </template>
 
@@ -8,7 +8,7 @@
 import Main from "../layouts/Main/Main.vue";
 
 export default {
-  name: "About",
+  name: "NoAuth",
   components: { Main },
 };
 </script>

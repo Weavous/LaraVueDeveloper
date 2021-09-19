@@ -23,7 +23,7 @@
 
               <div class="w-full text-right">
                 <a class="underline text-sm text-gray-600 hover:text-gray-900" href="#">
-                  ¿Olvidó su contraseña?
+                  Change Password?
                 </a>
               </div>
             </div>
@@ -54,8 +54,8 @@
 
             <div class="mt-7">
               <div class="flex justify-center items-center">
-                <label class="mr-2">¿Eres nuevo?</label>
-                <a href="#" class="text-blue-500 transition duration-500 ease-in-out transform hover:-translate-x hover:scale-105">Crea una cuenta</a>
+                <label class="mr-2">Don't Have an Account?</label>
+                <router-link to="/register" class="text-blue-500 transition duration-500 ease-in-out transform hover:-translate-x hover:scale-105">Create an Account</router-link>
               </div>
             </div>
           </form>

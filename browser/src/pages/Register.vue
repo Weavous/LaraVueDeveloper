@@ -1,10 +1,12 @@
-<template></template>
+<template>
+  <div>Register</div>
+</template>
 
 <script>
 import Main from "../layouts/Main/Main.vue";
 
 export default {
   name: "Register",
-  components: { Main },
+  components: { Main }
 };
 </script>
