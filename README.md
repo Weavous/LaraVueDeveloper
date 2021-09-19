@@ -217,7 +217,7 @@
     cd LaraVueDeveloper
 ```
 
-<h6 align="center">Set up Application 🚀</h6>
+<h6 align="center">Set up Application</h6>
 
 ```bash
     cd server
@@ -249,7 +249,7 @@
     php artisan serve
 ```
 
-<h6 align="center">Set up Front-end 🚀</h6>
+<h6 align="center">Set up Front-end</h6>
 
 ```bash
     vue init webpack-simple frontend
@@ -274,6 +274,22 @@
 ```bash
     npm install vue-router --save
 ```
+
+<h6 align="center">Expo</h6>
+
+```bash
+    npm i -g expo-cli
+```
+
+```bash
+    expo --version
+```
+
+```bash
+    expo init --npm
+```
+
+<h6 align="center">Set up Mobile</h6>
 
 <h6 align="center">Run with Docker</h6>
 
