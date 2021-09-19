@@ -5,8 +5,6 @@ namespace Database\Factories;
 use App\Models\Developer;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-use App\Models\Hobby;
-
 class DeveloperFactory extends Factory
 {
     /**
@@ -28,7 +26,6 @@ class DeveloperFactory extends Factory
         return [
             "name" => $this->faker->name($random === true ? "male" : "female"),
             "sex" => $random === true ? "M" : "F",
-            "hobby_id" => Hobby::inRandomOrder()->first()->id,
             "birthdate" => date("Y-m-d H:i:s", rand())
         ];
     }
