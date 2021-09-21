@@ -1,1 +1,1 @@
-export * from './DevelopersList'
+export * from './DeveloperCard'

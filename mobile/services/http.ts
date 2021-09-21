@@ -1,5 +1,5 @@
 import axios from 'axios'
 
 export const httpClient = axios.create({
-    baseURL: 'http://localhost:8000'
+    baseURL: 'http://192.168.1.72:8000'
 })
