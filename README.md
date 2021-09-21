@@ -217,6 +217,22 @@
     cd LaraVueDeveloper
 ```
 
+<h6 align="center">Vue</h6>
+
+```bash
+    vue init webpack-simple frontend
+```
+
+<h6 align="center">Packages</h6>
+
+```bash
+    npm	install	axios --save
+```
+
+```bash
+    npm install vue-router --save
+```
+
 <h6 align="center">Set up Backend</h6>
 
 ```bash
@@ -246,17 +262,13 @@
 ```
 
 ```bash
-    php artisan serve --host 0.0.0.0
+    php artisan serve --host 0.0.0.0 --port 8888
 ```
 
 <h6 align="center">Set up Frontend</h6>
 
 ```bash
-    vue init webpack-simple frontend
-```
-
-```bash
-    cd frontend
+    cd browser
 ```
 
 ```bash
@@ -265,14 +277,6 @@
 
 ```bash
     npm run dev
-```
-
-```bash
-    npm	install	axios --save
-```
-
-```bash
-    npm install vue-router --save
 ```
 
 <h6 align="center">Expo</h6>
