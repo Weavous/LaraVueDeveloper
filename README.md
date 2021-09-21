@@ -217,7 +217,7 @@
     cd LaraVueDeveloper
 ```
 
-<h6 align="center">Set up Application</h6>
+<h6 align="center">Set up Backend</h6>
 
 ```bash
     cd server
@@ -246,10 +246,10 @@
 ```
 
 ```bash
-    php artisan serve -- host 0.0.0.0
+    php artisan serve --host 0.0.0.0
 ```
 
-<h6 align="center">Set up Front-end</h6>
+<h6 align="center">Set up Frontend</h6>
 
 ```bash
     vue init webpack-simple frontend
