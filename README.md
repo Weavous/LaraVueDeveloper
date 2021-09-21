@@ -246,7 +246,7 @@
 ```
 
 ```bash
-    php artisan serve
+    php artisan serve -- host 0.0.0.0
 ```
 
 <h6 align="center">Set up Front-end</h6>
