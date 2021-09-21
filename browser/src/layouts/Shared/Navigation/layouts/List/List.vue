@@ -1,31 +1,31 @@
 <template>
   <ul>
     <Li>
-      <Link>
+      <Link to="/main/developer">
         <Bookmark></Bookmark>
       </Link>
     </Li>
 
     <Li>
-      <Link>
+      <Link to="/main/trash">
         <Trash></Trash>
       </Link>
     </Li>
 
     <Li>
-      <Link>
+      <Link to="/main/cart">
         <Cart></Cart>
       </Link>
     </Li>
 
     <Li>
-      <Link>
+      <Link to="/main/settings">
         <Settings></Settings>
       </Link>
     </Li>
 
     <Li>
-      <Link>
+      <Link to="/main/bell">
         <Bell></Bell>
       </Link>
     </Li>

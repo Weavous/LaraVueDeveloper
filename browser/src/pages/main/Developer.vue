@@ -11,9 +11,9 @@
 </template>
 
 <script>
-import Main from "../layouts/Main/Main.vue";
+import Main from "../../layouts/Main/Main.vue";
 
-import GenericDisplay from "../components/GenericDisplay/templates/GenericDisplay.vue";
+import GenericDisplay from "../../components/GenericDisplay/templates/GenericDisplay.vue";
 
 export default {
   name: "Developer",

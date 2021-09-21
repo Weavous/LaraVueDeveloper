@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import Main from "../layouts/Main/Main.vue";
+import Main from "../../layouts/Main/Main.vue";
 
 export default {
   name: "Register",

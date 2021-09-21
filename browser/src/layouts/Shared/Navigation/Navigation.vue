@@ -2,7 +2,7 @@
   <div class="h-screen w-screen flex">
     <aside class="flex flex-col items-center bg-white text-gray-700 shadow h-full">
       <div class="h-16 flex items-center w-full">
-        <router-link class="h-6 w-6 mx-auto" to="developer">
+        <router-link to="/" class="h-6 w-6 mx-auto">
           <Laravel></Laravel>
         </router-link>
       </div>
@@ -11,7 +11,9 @@
 
       <div class="mt-auto h-16 flex items-center w-full">
         <button class="h-16 w-10 mx-auto flex flex justify-center items-center w-full focus:text-orange-500 hover:bg-red-200 focus:outline-none">
-          <router-link to="login"><Logout></Logout></router-link>
+          <router-link to="/auth/login">
+            <Logout></Logout>
+          </router-link>
         </button>
       </div>
     </aside>
