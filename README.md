@@ -295,6 +295,8 @@
 
 <h6 align="center">Set up Mobile</h6>
 
+No arquivo `mobile/services/http.ts`, setar a url da api, devendo ser informado o endereço de ip
+
 <h6 align="center">Run with Docker</h6>
 
 After doing the project setup, follow the steps.
@@ -338,7 +340,7 @@ Create an Laravel application key
     }
 ```
 
-<h5 align="center">Noções básicas sobre o aplicativo</h5>
+<h5 align="center">Noções básicas sobre a aplicação</h5>
 
 <h6 align="center">Authentication</h6>
 
