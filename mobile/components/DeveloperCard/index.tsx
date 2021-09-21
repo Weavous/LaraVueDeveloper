@@ -33,7 +33,7 @@ export function DeveloperCard({ developer }: DeveloperCardProps) {
       <Footer>
         <Details>
           <Text>🎂</Text>
-          <DetailName>Aniversário</DetailName>
+          <DetailName>Birth Date</DetailName>
         </Details>
         <Date>{developer.birthdate.substr(0,10).split('-').reverse().join('/')}</Date>
       </Footer>
