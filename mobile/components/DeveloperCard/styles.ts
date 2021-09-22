@@ -25,6 +25,10 @@ export const Footer = styled.View`
   margin-top: 19px;
 `
 
+export const Information = styled.View`
+  margin-top: 10px;
+`
+
 export const Details = styled.View`
   flex-direction: row;
   align-items: center;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text } from 'react-native'
+import { Text, Button } from 'react-native'
 
 import {
   Container,
@@ -8,6 +8,7 @@ import {
   Footer,
   Details,
   DetailName,
+  Information,
   Date,
 } from './styles';
 
@@ -25,7 +26,7 @@ interface DeveloperCardProps {
   }
 }
 
-export function DeveloperCard({ developer }: DeveloperCardProps) {
+export function DeveloperCard({ navigation, developer }: DeveloperCardProps) {
   return (
     <Container>
       <Tools>{developer.tools.map(tool => tool.name).join(' | ')}</Tools>
@@ -37,6 +38,10 @@ export function DeveloperCard({ developer }: DeveloperCardProps) {
         </Details>
         <Date>{developer.birthdate.substr(0,10).split('-').reverse().join('/')}</Date>
       </Footer>
+
+      <Information>
+        <Button title="More Information" onPress={() => navigation.navigate('MoreInformation', { id: developer.id })}></Button>
+      </Information>
     </Container>
   )
 }

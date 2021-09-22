@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { getBottomSpace } from 'react-native-iphone-x-helper'
 
-import { httpClient } from '../../services'
-import { DeveloperCard } from '../../components'
+import { httpClient } from '../../services/http'
+import { DeveloperCard } from '../../components/DeveloperCard'
 import { Container, Header, Title, DeveloperList } from './styles'
 
 export interface Developer {
@@ -17,14 +17,13 @@ export interface Developer {
   }>
 }
 
-export function DevelopersList() {
+export function DevelopersList({ navigation }) {
   const [developers, setDevelopers] = useState<Developer[]>([])
 
   useEffect(() => {
-    httpClient.get<Developer[]>('/api/v1/developers')
-      .then(({ data }) => {
-        setDevelopers(data)
-      })
+    httpClient.get<Developer[]>('/api/v1/developers').then(({ data }) => {
+      setDevelopers(data)
+    })
   }, [])
 
   return (
@@ -32,15 +31,7 @@ export function DevelopersList() {
       <Header>
         <Title>Developers</Title>
       </Header>
-      <DeveloperList
-        data={developers}
-        keyExtractor={item => String(item.id)}
-        renderItem={({ item }) => <DeveloperCard developer={item} />}
-        showsVerticalScrollIndicator={false}
-        contentContainerStyle={{
-          paddingBottom: getBottomSpace()
-        }}
-      />
+      <DeveloperList data={developers} keyExtractor={item => String(item.id)} renderItem={({ item }) => <DeveloperCard navigation={navigation} developer={item} />} showsVerticalScrollIndicator={false} contentContainerStyle={{ paddingBottom: getBottomSpace() }}></DeveloperList>
     </Container>
   );
 }
