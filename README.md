@@ -233,6 +233,18 @@
     npm install vue-router --save
 ```
 
+```bash
+    npm install react-native-screens
+```
+
+```bash
+    npm install react-native-safe-area-context
+```
+
+```bash
+    npm install @react-navigation/stack
+```
+
 <h6 align="center">Set up Backend</h6>
 
 ```bash
